@@ -1,0 +1,29 @@
+@import "src/app/shared/colors.scss";
+@import "src/app/shared/variables";
+
+.top-bar {
+  position: fixed;
+  box-shadow: 0 0 1px 1px $main-color-dark;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title {
+    color: $main-text-color;
+    font-family: $main-font;
+    font-size: 20px;
+    margin: 0
+}

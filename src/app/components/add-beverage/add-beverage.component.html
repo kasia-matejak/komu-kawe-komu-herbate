@@ -1,0 +1,8 @@
+<div class="buttons-section">
+  <button class="add-button" *ngFor="let button of buttons"
+    (click)="addClicked(button)">
+      <img src="assets/images/plus-icon.svg" alt="">
+      <img src="{{button.icon}}" alt="">
+      <p class="text">{{button.name}}</p>
+  </button>
+</div>

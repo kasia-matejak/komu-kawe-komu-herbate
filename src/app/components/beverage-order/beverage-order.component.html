@@ -1,0 +1,5 @@
+<div class="order-section">
+  <div [ngClass]="beverage.name === 'herbata' ? 'tea-order' : 'coffee-order'" *ngFor="let beverage of beverages">
+    <p> wow you clicked {{beverage.name}}</p>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+@import "src/app/shared/colors.scss";
+@import "src/app/shared/variables";
+
+.buttons-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  gap: 50px;
+  cursor: pointer;
+  margin-right: 30px
+}
+.add-button {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+}
+
+.text {
+  margin-left: 3px;
+  margin-bottom: 0;
+  color: black;
+  font-size: 1rem;
+}
