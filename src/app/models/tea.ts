@@ -1,6 +1,16 @@
 import {Beverage} from "./beverage";
+import {
+  SugarEnum,
+  TeaTypeEnum
+} from "../shared/enums/beverages-characteristics-enum";
 
-export interface Tea extends Beverage {
-  type: string;
-  sugar: string;
+export class Tea {
+  forWhom?: string;
+  type: TeaTypeEnum;
+  sugar: SugarEnum;
+
+  constructor(type: TeaTypeEnum, sugar: SugarEnum) {
+    this.type = type;
+    this.sugar = sugar;
+  }
 }

@@ -1,5 +1,13 @@
 $main-text-color: black;
 $main-color-dark: #8a948b;
 $main-color-light: #E1E5E1;
-$secondary-color: #F0DBC8;
+$secondary-color: #9c8273;
 $main-layout-background: #f7f7f7;
+
+$dark-gray: #6b6b6b;
+$light-gray: #dbdbdb;
+
+@mixin text-properties($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}

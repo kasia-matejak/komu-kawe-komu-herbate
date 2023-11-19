@@ -2,8 +2,9 @@
 @import "src/app/shared/variables";
 
 .top-bar {
-  position: fixed;
-  box-shadow: 0 0 1px 1px $main-color-dark;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 1px 1px $dark-gray;
   background: white;
   display: flex;
   flex-direction: row;
@@ -13,6 +14,11 @@
   z-index: 1000;
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 20px;
+
+  @media(max-width: 650px) {
+    flex-flow: column wrap;
+    display: block;
+  }
 }
 
 .header {
@@ -25,5 +31,5 @@
     color: $main-text-color;
     font-family: $main-font;
     font-size: 20px;
-    margin: 0
+    margin: 0;
 }

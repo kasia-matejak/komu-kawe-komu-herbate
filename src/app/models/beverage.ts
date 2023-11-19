@@ -1,5 +1,9 @@
-export interface Beverage {
-  name: string;
+import { Tea } from "./tea";
+import { Coffee } from "./coffee";
+import {BeverageEnum} from "../shared/enums/beverages-enum";
+
+export class Beverage {
+  name?: BeverageEnum;
   icon?: string;
-  forWhom?: string;
+  order?: Tea | Coffee;
 }
