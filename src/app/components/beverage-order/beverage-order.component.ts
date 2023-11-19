@@ -60,6 +60,5 @@ export class BeverageOrderComponent implements OnInit {
   }
 
   protected readonly BeverageEnum = BeverageEnum;
-  protected readonly CoffeePreparationEnum = CoffeePreparationEnum;
 }
 

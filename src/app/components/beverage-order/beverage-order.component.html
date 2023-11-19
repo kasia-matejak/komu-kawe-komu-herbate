@@ -9,28 +9,28 @@
       <input type="text" id="forWhom">
       <div *ngIf="isCoffee(beverage.order)">
         <p>rodzaj</p>
-          <div *ngFor="let method of CoffeePreparationMethods">
-            <input type="button" [value]="method">
-          </div>
+            <button *ngFor="let method of CoffeePreparationMethods"
+              [value]="method">{{ method }}
+            </button>
         <p>moc</p>
-          <div *ngFor="let strength of CoffeeStrengthOptions">
-            <input type="button" [value]="strength">
-          </div>
+            <button *ngFor="let strength of CoffeeStrengthOptions"
+              [value]="strength">{{ strength }}
+            </button>
         <p>mleko</p>
-        <div *ngFor="let milk of MilkOptions">
-          <input type="button" [value]="milk">
-        </div>
+          <button *ngFor="let milk of MilkOptions"
+                  [value]="milk">{{ milk }}
+          </button>
       </div>
       <div *ngIf="isTea(beverage.order)">
         <p>rodzaj</p>
-        <div *ngFor="let type of TeaTypes">
-          <input type="button" [value]="type">
-        </div>
+        <button *ngFor="let type of TeaTypes"
+                [value]="type">{{ type }}
+        </button>
       </div>
       <p>cukier</p>
-      <div *ngFor="let sugar of SugarOptions">
-        <input type="button" [value]="sugar">
-      </div>
+      <button *ngFor="let sugar of SugarOptions"
+              [value]="sugar">{{ sugar }}
+      </button>
     </form>
   </div>
 </div>
